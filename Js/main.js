@@ -1,7 +1,14 @@
 const robotron = document.querySelector("#robotron");
 
-robotron.addEventListener("click", dizOi);
+robotron.addEventListener("click", () => {
+  console.log("cliquei no robo");
+});
 
-function dizOi() {
-  console.log("Olá");
+// Você pode usar function ou () => arrow function
+
+function dizOi(nome) {
+  console.log(nome);
+  console.log("Bora pro jogo!");
 }
+
+dizOi("Gustavo");
